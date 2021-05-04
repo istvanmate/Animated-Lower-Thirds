@@ -607,7 +607,7 @@ body {
 /*Name*/
 .text-content > div:first-child div {
     position: relative;
-    display: inline-flex;
+/*    display: inline-flex;*/
     transition: font-size 0.1s;
     padding: 0 0.2rem;
 }
@@ -1164,24 +1164,26 @@ body {
 
 
 /*Uncomment to avaible multiple lines*/
-/* .logo {
+.logo {
     align-self: start;
 }
 .style-1 > .graph-1 {
 	align-self: start;
 }
+/*
 .alt > div.text-content > div:nth-child(2) div {
     line-height: 1.25em;
 }
 .alt > div.text-content > div:nth-child(2) {
 	height: auto!important;
 }
+*/
 .alt.style-1.left > .text-content {
 	margin-right: 1em;
 } 
 .alt.style-1.right > .text-content {
 	margin-left: 1em;
-} */
+}
 
 
 /*Uncomment to invert vertical position*/
@@ -1203,8 +1205,14 @@ body {
 } */
 
 /*FIX HEIGHT LINE ISSUES AND MULTIPLE LINES*/
-/* .alt > div.text-content > div:first-child, .alt > div.text-content > div:nth-child(2) {height: auto!important;}
-.alt > div.text-content > div:first-child div, .alt > div.text-content > div:nth-child(2) div {line-height: 1.25em;} */
+#lower-third-3 > div.text-content > div:first-child,
+#lower-third-3 > div.text-content > div:nth-child(2),
+#lower-third-4 > div.text-content > div:first-child,
+#lower-third-4 > div.text-content > div:nth-child(2) {height: auto!important;}
+#lower-third-3 > div.text-content > div:first-child div,
+#lower-third-3 > div.text-content > div:nth-child(2) div,
+#lower-third-4 > div.text-content > div:first-child div,
+#lower-third-4 > div.text-content > div:nth-child(2) div {line-height: 1.2em;}
 
 
 /***Con esto no puedo quitar el fondo***/
@@ -1244,3 +1252,17 @@ body {
 	margin-left: -4em;
 	margin-right: -4em;
 } */
+
+sup {
+	font-size: 66%;
+	line-height: 0;
+}
+
+.nbsp {
+	font-size: 33%;
+	line-height: 0;
+}
+
+#lower-third-3 {
+	width:100%;
+}
