@@ -311,10 +311,10 @@ body {
 }
 @keyframes animation-style3-text-1 {
 	0% {
-		bottom: -102%;
+		bottom: -110%;
 	}
 	70% {
-		bottom: -102%;
+		bottom: -110%;
 	}
 	100% {
 		bottom: 0;
@@ -322,10 +322,10 @@ body {
 }
 @keyframes animation-style3-text-2 {
 	0% {
-		top: -102%;
+		top: -110%;
 	}
 	70% {
-		top: -102%;
+		top: -110%;
 	}
 	100% {
 		top: 0;
@@ -614,6 +614,7 @@ body {
 #lower-third-1 > div.text-content > div:first-child div {
 	font-family: var(--alt-1-font);
 	font-size: var(--alt-1-name-size);
+    font-style: var(--alt-1-name-style);
     font-weight: var(--alt-1-name-weight);
     text-transform: var(--alt-1-name-transform);
     color: var(--alt-1-name-color);
@@ -622,7 +623,8 @@ body {
 #lower-third-2 > div.text-content > div:first-child div {
 	font-family: var(--alt-2-font);
 	font-size: var(--alt-2-name-size);
-    font-weight: var(--alt-2-name-weight);
+    font-style: var(--alt-2-name-style);
+	font-weight: var(--alt-2-name-weight);
     text-transform: var(--alt-2-name-transform);
     color: var(--alt-2-name-color);
     text-shadow : var(--alt-2-shadows);
@@ -630,6 +632,7 @@ body {
 #lower-third-3 > div.text-content > div:first-child div {
 	font-family: var(--alt-3-font);
 	font-size: var(--alt-3-name-size);
+    font-style: var(--alt-3-name-style);
     font-weight: var(--alt-3-name-weight);
     text-transform: var(--alt-3-name-transform);
     color: var(--alt-3-name-color);
@@ -638,6 +641,7 @@ body {
 #lower-third-4 > div.text-content > div:first-child div {
 	font-family: var(--alt-4-font);
 	font-size: var(--alt-4-name-size);
+    font-style: var(--alt-4-name-style);
     font-weight: var(--alt-4-name-weight);
     text-transform: var(--alt-4-name-transform);
     color: var(--alt-4-name-color);
@@ -654,6 +658,7 @@ body {
 #lower-third-1 > div.text-content > div:nth-child(2) div {
     font-family: var(--alt-1-font);
     font-size: var(--alt-1-info-size);
+	font-style: var(--alt-1-info-style);
     font-weight: var(--alt-1-info-weight);
     text-transform: var(--alt-1-info-transform);
     color: var(--alt-1-info-color);
@@ -662,6 +667,7 @@ body {
 #lower-third-2 > div.text-content > div:nth-child(2) div {
     font-family: var(--alt-2-font);
     font-size: var(--alt-2-info-size);
+	font-style: var(--alt-2-info-style);
     font-weight: var(--alt-2-info-weight);
     text-transform: var(--alt-2-info-transform);
     color: var(--alt-2-info-color);
@@ -670,6 +676,7 @@ body {
 #lower-third-3 > div.text-content > div:nth-child(2) div {
     font-family: var(--alt-3-font);
     font-size: var(--alt-3-info-size);
+	font-style: var(--alt-3-info-style);
     font-weight: var(--alt-3-info-weight);
     text-transform: var(--alt-3-info-transform);
     color: var(--alt-3-info-color);
@@ -678,7 +685,8 @@ body {
 #lower-third-4 > div.text-content > div:nth-child(2) div {
     font-family: var(--alt-4-font);
     font-size: var(--alt-4-info-size);
-    font-weight: var(--alt-4-info-weight);
+	font-style: var(--alt-4-info-style);
+	font-weight: var(--alt-4-info-weight);
     text-transform: var(--alt-4-info-transform);
     color: var(--alt-4-info-color);
     text-shadow : var(--alt-4-shadows);	
@@ -691,9 +699,20 @@ body {
 	transition: margin 0.1s;
 	min-width: fit-content;
 }
+#lower-third-1 > .logo img {
+	max-height: var(--alt-1-logo-size);
+}
+#lower-third-2 > .logo img {
+	max-height: var(--alt-2-logo-size);
+}
+#lower-third-3 > .logo img {
+	max-height: var(--alt-3-logo-size);
+}
+#lower-third-4 > .logo img {
+	max-height: var(--alt-4-logo-size);
+}
 .logo img {
     /* max-height: 3.5em; */
-    max-height: var(--alt-1-logo-size);
     display: flex;
 	position: relative;
 	filter: blur(0);
@@ -820,20 +839,19 @@ body {
 /*****Style 2*****/
 
 #lower-third-1.style-2 > div.text-content > div:first-child {
-	/* height: calc(var(--alt-1-name-size) + 1rem); */
 	height: calc(var(--alt-1-name-size) + 1.2rem);
     padding: 0 0.2rem 0 0;
 }
 #lower-third-2.style-2 > div.text-content > div:first-child {
-	height: calc(var(--alt-2-name-size) + 1rem);
+	height: calc(var(--alt-2-name-size) + 1.2rem);
 	padding: 0 0.2rem 0 0;
 }
 #lower-third-3.style-2 > div.text-content > div:first-child {
-	height: calc(var(--alt-3-name-size) + 1rem);
+	height: calc(var(--alt-3-name-size) + 1.2rem);
 	padding: 0 0.2rem 0 0;
 }
 #lower-third-4.style-2 > div.text-content > div:first-child {
-	height: calc(var(--alt-4-name-size) + 1rem);
+	height: calc(var(--alt-4-name-size) + 1.2rem);
 	padding: 0 0.2rem 0 0;
 }
 
@@ -892,15 +910,15 @@ body {
     padding: 0 0.2rem 0 0;
 }
 #lower-third-2.style-2 > div.text-content > div:nth-child(2) {
-	height: calc(var(--alt-2-info-size) + 1rem);
+	height: calc(var(--alt-2-info-size) + 1.2rem);
 	padding: 0 0.2rem 0 0;
 }
 #lower-third-3.style-2 > div.text-content > div:nth-child(2) {
-	height: calc(var(--alt-3-info-size) + 1rem);
+	height: calc(var(--alt-3-info-size) + 1.2rem);
 	padding: 0 0.2rem 0 0;
 }
 #lower-third-4.style-2 > div.text-content > div:nth-child(2) {
-	height: calc(var(--alt-4-info-size) + 1rem);
+	height: calc(var(--alt-4-info-size) + 1.2rem);
 	padding: 0 0.2rem 0 0;
 }
 

@@ -431,14 +431,24 @@ body.browser-source.lower-thirds{
   line-height: 1em;
   width: 22px;
   height: 8px;
-  background: var(--obs-field-background-disable);
+  background: var(--obs-field-background);
   border-radius: 3px;
   text-align: right;
   box-sizing: border-box;
   overflow: hidden;
+  font-weight: 700;
+  color: #666666;
 }
 .time-bar > div + div {
   margin: 1px 0 0 0;
+}
+.active > div > .time-bar > div,
+.inactive > div > .time-bar > div {
+  color: #598cb4;
+}
+.active > div > .time-bar > div + div,
+.inactive > div > .time-bar > div + div {
+  color: #b46161;
 }
 
 label#alt-1-custom-times::after,
@@ -608,7 +618,7 @@ input#alt-2-name, input#alt-2-info,
 input#alt-3-name, input#alt-3-info,
 input#alt-4-name, input#alt-4-info {
     float: left;
-    width: calc(100% - 92px);
+    width: calc(100% - 111px);
     margin-right: 0px;
     border-radius: 2px 0 0 2px;
     border-right: 0;
@@ -624,7 +634,7 @@ input#alt-4-name, input#alt-4-info {
     border-left: 0;
     box-sizing: border-box;
     height: 23px;
-    width: 92px;
+    width: 111px;
 }
 
 #alt-1-name-appearance > .config-btn > .icon-btn > i.fas,
