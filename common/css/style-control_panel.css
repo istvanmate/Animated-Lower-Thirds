@@ -29,7 +29,7 @@ body.browser-source.lower-thirds{
 }
 
 .static-panel-top {
-  /*width: 330px;*/
+  /*width: 330px;*/ /*in case of top placement width will increase*/
   margin: 5px;
   display: flex;
   flex-direction: column;
@@ -1072,7 +1072,7 @@ select#alt-4-font {
 .sortees {
   background: var(--obs-background);
   display:inline-block;
-  width:330px;
+  width:330px; /*in case of top placement lower thirds will stack horizontally*
 }
 
 .ui-sortable-helper {
